@@ -8,8 +8,8 @@ export default function Search({words, searchedWord}){
   }
   
   useEffect(()=>{
-    searchedWord(value)
-  })
+    searchedWord(value.toLocaleLowerCase())
+  }, [value])
 
     return(
         <div className="search-bar">
