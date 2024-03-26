@@ -1,0 +1,162 @@
+body {
+   margin: 0px;
+   padding: 0px;
+}
+
+.container {
+   width: 100%;
+   height: 100%;
+}
+
+.containt-container {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   position: relative;
+}
+
+.control-container {
+   z-index: 5;
+   flex: 0.6;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   background: #f2ebe9;
+   position: fixed;
+
+}
+
+.app-name {
+   flex: 2;
+   padding-left: 10px;
+   color: #2d2d2d;
+   font-family: 'Arial Narrow', Arial;
+   width: 100%;
+
+}
+
+.app-name span {
+   color: rgb(176, 11, 11);
+
+}
+
+.search-bar {
+   flex: 5;
+   padding-left: 40px;
+
+}
+
+.search-bar input {
+   padding: 10px;
+   border: none;
+   outline: none;
+   width: 60%;
+
+
+}
+
+.add-your-favdic {
+   flex: 0.5;
+   margin-right: 20px;
+}
+
+.add-your-favdic select {
+   background-color: #1869a7;
+   color: white;
+   border: none;
+   outline: none;
+   padding: 8px;
+
+}
+
+.containt {
+   flex: 6;
+   word-wrap: break-word;
+   width: 95%;
+   height: 100%;
+   position: relative;
+   margin: auto;
+   margin-top: 70px;
+}
+.edit-Btn {
+   background-color: transparent;
+   position: absolute;
+   right: 79px;
+   top: 40px;
+}
+
+.edit-Btn button {
+   background-color: rgb(215, 26, 26);
+   border: none;
+   color: white;
+   border-radius: 6px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   font-size: 14px;
+   position: fixed;
+}
+
+.text-area {
+   margin: auto;
+   margin-top: 30px;
+   height: 100vh;
+   width: 90%;
+   font-size: 20px;
+   outline: none;
+   overflow: hidden;
+   border: none;
+   line-height: 25px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.container p {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
+   line-height: 25px;
+   width:90%;
+}
+
+.slct-word {
+   font-size: 18px;
+   color: white;
+   padding: 5px;
+   padding-left: 7px;
+   padding-right: 7px;
+   border-radius: 8px;
+   opacity: 0.8;
+}
+
+.slct-word a {
+   color: white;
+   font-size: 20px;
+
+}
+
+@media only screen and (max-width: 470px) {
+
+
+   .app-name {
+      max-width: 75px;
+      font-size: 10px;
+   }
+
+   .search-bar {
+        width: 80%;
+        margin-left: -37px;
+        
+      }
+      .search-bar input{
+         width: 60%;
+         width: 80%;
+
+   }
+   .add-your-favdic select{
+      padding: 5px;
+      margin-right: 10px;
+   }
+}
